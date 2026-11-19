@@ -29,11 +29,11 @@ A defasagem escolar **se acumula**. Um aluno do 9º ano que não entende equaç�
 Ao mesmo tempo, o professor, com turmas de mais de 30 alunos, não tem como diagnosticar individualmente onde cada um travou.
 
 **Dados reais:**
-- Estudantes com aprendizado adequado em matemática no Saeb 2023: **43,5% no 5º ano**, **16,5% no 9º ano** e **5,2% no 3º ano do ensino médio**. A queda mostra a lacuna se acumulando.
+- Estudantes da rede pública com aprendizado adequado em matemática no Saeb 2023: **43,5% no 5º ano**, **16,5% no 9º ano** e **5,2% no 3º ano do ensino médio**. A queda mostra a lacuna se acumulando.
 - No 5º ano, **52%** dos alunos mais ricos têm aprendizado adequado em matemática, contra **32%** dos mais pobres.
 - No **PISA 2022**, **73% dos estudantes brasileiros** de 15 anos ficaram abaixo do nível básico em matemática.
 
-Fontes: Todos Pela Educação, a partir do Saeb 2023/Inep, divulgado em abril de 2025 ([5º ano](https://www.brasildefato.com.br/2025/04/28/aprendizagem-na-educacao-basica-ainda-nao-retomou-niveis-pre-pandemia/), [9º ano](https://www.jornalopcao.com.br/educacao/aprendizagem-na-educacao-basica-ainda-nao-retomou-niveis-pre-pandemia-701508/), [ensino médio](https://mais.opovo.com.br/jornal/cidades/2025/04/29/54-dos-alunos-do-3-ano-do-ensino-medio-do-ceara-tem-aprendizado-abaixo-do-basico-em-matematica.html), [desigualdade](https://abcdoabc.com.br/estudo-revela-que-desigualdades-educacionais-aumentaram-no-brasil-apos-pandemia/)) e [Inep, PISA 2022](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa). <!-- TODO: conferir no relatório original do Todos Pela Educação -->
+Fontes: [Todos Pela Educação, a partir do Saeb 2023/Inep, abril de 2025](https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2025/04/estudo-aprendizagem-na-educacao-basica-no-brasil-pos-pandemia-todos-pela-educacaodocx.pdf); [Iede/QEdu, Saeb 2023](https://portaliede.org.br/avaliacao/qedu-e-atualizado-com-os-dados-de-aprendizado-adequado-no-saeb-2023-confira) (5º ano por nível socioeconômico); [Inep, PISA 2022](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa).
 
 ### A solução
 São 5 habilidades em escada, da mais básica para a mais avançada:
@@ -45,7 +45,7 @@ São 5 habilidades em escada, da mais básica para a mais avançada:
    - acertou as duas perguntas do degrau → o degrau está firme e o diagnóstico **sobe um degrau**.
 3. **Receba seu caminho:** o ponto de partida é o degrau mais básico que precisa de reforço, logo acima da base firme. O aluno recebe uma explicação curta, aulas gratuitas da Khan Academy e o **caminho degrau por degrau até a sua série**.
 
-São no máximo 8 perguntas. O nome do aluno nunca é guardado: o navegador só lembra o último ponto de partida, para mostrar o avanço quando ele refaz o diagnóstico.
+São no máximo 10 perguntas. O nome do aluno nunca é guardado: o navegador só lembra o último ponto de partida, para mostrar o avanço quando ele refaz o diagnóstico.
 
 ---
 
@@ -102,7 +102,6 @@ Alunos · Professores · Coordenação pedagógica · Secretarias municipais de 
 - [x] Layout responsivo (celular e desktop)
 - [x] Acessibilidade: tags semânticas, `alt` nas imagens, `label` nos campos, contraste legível e navegação por teclado
 
-<!-- TODO: marcar/desmarcar conforme for concluindo -->
 
 ---
 
@@ -122,7 +121,7 @@ ponto-de-partida/
 │   └── formulario.js      # Validação do formulário "Leve para sua escola"
 ├── img/
 │   ├── logo.svg
-│   └── avatar.svg         # provisório: trocar pelas fotos da equipe
+│   └── avatar.svg         # ícone dos integrantes na página de equipe
 └── README.md
 ```
 
@@ -163,7 +162,9 @@ Todo o código e o texto foram **revisados, compreendidos e ajustados pelo grupo
 
 ## 📚 Fontes
 
+- Todos Pela Educação – Aprendizagem na educação básica no Brasil pós-pandemia (Saeb 2023, abril de 2025): https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2025/04/estudo-aprendizagem-na-educacao-basica-no-brasil-pos-pandemia-todos-pela-educacaodocx.pdf
+- Iede/QEdu – Aprendizado adequado no Saeb 2023: https://portaliede.org.br/avaliacao/qedu-e-atualizado-com-os-dados-de-aprendizado-adequado-no-saeb-2023-confira
 - INEP – PISA 2022: https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa
 - ONU – Objetivos de Desenvolvimento Sustentável: https://brasil.un.org/pt-br/sdgs
 - BNCC – Base Nacional Comum Curricular: http://basenacionalcomum.mec.gov.br
-<!-- TODO: incluir as fontes dos conteúdos/links usados na trilha -->
+- Khan Academy em português – aulas e exercícios indicados na trilha de estudo: https://pt.khanacademy.org

@@ -98,7 +98,8 @@ const questoes = [
 const DEGRAU_INICIAL = { "6": 2, "7": 3, "8": 4, "9": 5, "em": 5 };
 const NOME_SERIE = { "6": "6º ano", "7": "7º ano", "8": "8º ano", "9": "9º ano", "em": "ensino médio" };
 
-// Trava de segurança: o caminho mais longo possível usa 8 perguntas
+// Trava de segurança: o caminho mais longo possível usa 10 perguntas
+// (acertar a primeira e errar a segunda questão em todos os degraus)
 const MAX_PERGUNTAS = 10;
 
 const CHAVE_RESULTADO = "pontoDePartida_ultimoResultado";
