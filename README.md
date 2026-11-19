@@ -142,13 +142,10 @@ Não é necessário instalar nada.
 
 | Nome | RM |
 |---|---|
-| Nome do integrante 1 | RM00000 |
-| Nome do integrante 2 | RM00000 |
-| Nome do integrante 3 | RM00000 |
-| Nome do integrante 4 | RM00000 |
-| Nome do integrante 5 | RM00000 |
-
-<!-- TODO: preencher -->
+| Iago Bernardes Alves Leal Barbosa | RM574295 |
+| Plinio Arteman Pedra | RM574580 |
+| João Eduardo Busar Pena | RM575913 |
+| Vinícius de Oliveira Gonçalves | RM575053 |
 
 ---
 
