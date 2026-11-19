@@ -8,7 +8,8 @@
 
 // Habilidades em ordem: da mais básica (1) para a mais avançada (5).
 // Cada uma tem uma explicação curta (funciona sem internet) e links gratuitos
-// para aulas e exercícios da Khan Academy em português (conferidos em 18/11/2026).
+// da Khan Academy em português: aulas em vídeo e exercícios com correção na hora,
+// que funcionam como banco de questões para praticar (conferidos em 19/11/2026).
 const habilidades = [
   {
     id: 1,
@@ -18,7 +19,7 @@ const habilidades = [
     links: [
       { texto: "Aula: Divisão usando valor posicional (Khan Academy, 4º ano)", url: "https://pt.khanacademy.org/math/pt-4-ano/numeros-multiplicacao-e-divisao-4ano/divisao-valor-posicional-e-area-4ano/v/division-using-understanding-of-place-value" },
       { texto: "Aula: O conceito de divisão (Khan Academy, 4º ano)", url: "https://pt.khanacademy.org/math/pt-4-ano/numeros-multiplicacao-e-divisao-4ano/introducao-divisao/v/the-idea-of-division" },
-      { texto: "Exercícios: Divisão com grupos de objetos (Khan Academy)", url: "https://pt.khanacademy.org/math/pt-4-ano/numeros-multiplicacao-e-divisao-4ano/introducao-divisao/e/meaning-of-division" }
+      { texto: "Pratique: Divisão com grupos de objetos (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/pt-4-ano/numeros-multiplicacao-e-divisao-4ano/introducao-divisao/e/meaning-of-division" }
     ]
   },
   {
@@ -27,9 +28,9 @@ const habilidades = [
     serie: "6º ano",
     explicacao: "Uma fração mostra partes de um todo. Para calcular 3/4 de 20: divida 20 em 4 partes (20 ÷ 4 = 5) e pegue 3 delas (5 × 3 = 15).",
     links: [
-      { texto: "Aula: Multiplicação de frações e números inteiros (Khan Academy, 5º ano)", url: "https://pt.khanacademy.org/math/pt-5-ano/numeros-multiplicacao-divisao-com-fracoes-5ano/multiplicacao-de-fracoes-unitarias-e-numeros-inteiros/v/multiplying-fractions-and-whole-numbers" },
+      { texto: "Aula: Multiplicação de frações unitárias e números inteiros (Khan Academy, 5º ano)", url: "https://pt.khanacademy.org/math/pt-5-ano/numeros-multiplicacao-divisao-com-fracoes-5ano/multiplicacao-de-fracoes-unitarias-e-numeros-inteiros/v/multiplying-fractions-and-whole-numbers" },
       { texto: "Aula: Comparação de frações com denominadores diferentes (Khan Academy, 6º ano)", url: "https://pt.khanacademy.org/math/6-ano-matematica/numeros-fracoes/comparacao-de-fracoes-com-denominadores-diferentes/v/comparing-fractions-with-different-denominators" },
-      { texto: "Exercícios: Compare frações com denominadores diferentes (Khan Academy)", url: "https://pt.khanacademy.org/math/6-ano-matematica/numeros-fracoes/comparacao-de-fracoes-com-denominadores-diferentes/e/comparing_fractions_2" }
+      { texto: "Pratique: Compare frações com denominadores e numeradores diferentes (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/arithmetic-home/arith-review-fractions/arith-comparing-fractions/e/comparing_fractions_2" }
     ]
   },
   {
@@ -38,9 +39,9 @@ const habilidades = [
     serie: "6º e 7º ano",
     explicacao: "Porcentagem é uma fração com denominador 100. 10% é dividir por 10; 25% é dividir por 4. Desconto de 25% em R$ 80: 80 ÷ 4 = 20, então o preço final é 80 − 20 = R$ 60.",
     links: [
-      { texto: "Aula: Introdução às porcentagens (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/introducao-as-porcentagens/v/percent-from-fraction-models" },
-      { texto: "Exercícios: Relacione frações, decimais e porcentagens (Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/introducao-as-porcentagens/e/relate-fractions--decimals--and-percents" },
-      { texto: "Exercícios: Problemas de porcentagem (Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/problemas-de-porcentagem/e/markup_and_commission_word_problems" }
+      { texto: "Aula: Porcentagens a partir de modelos de frações (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/introducao-as-porcentagens/v/percent-from-fraction-models" },
+      { texto: "Pratique: Relacione frações, números decimais e porcentagens (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/introducao-as-porcentagens/e/relate-fractions--decimals--and-percents" },
+      { texto: "Pratique: Problemas de porcentagem (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-mmc-mdc-porcentagem-7ano/problemas-de-porcentagem/e/markup_and_commission_word_problems" }
     ]
   },
   {
@@ -49,9 +50,9 @@ const habilidades = [
     serie: "7º ano",
     explicacao: "Numa equação, o objetivo é deixar o x sozinho fazendo a operação inversa dos dois lados. Em 3x − 4 = 11: some 4 (3x = 15) e divida por 3 (x = 5).",
     links: [
-      { texto: "Aula: A mesma coisa dos dois lados da equação (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/algebra-equacoes-7ano/raciocinio-para-equacoes-de-uma-etapa/v/why-we-do-the-same-thing-to-both-sides-simple-equations" },
-      { texto: "Aula: Equações de adição e subtração de uma etapa (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/algebra-equacoes-7ano/equacao-de-soma-e-subtracao-de-uma-etapa/v/adding-and-subtracting-the-same-thing-from-both-sides" },
-      { texto: "Exercícios: Equações de uma etapa (Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/algebra-equacoes-7ano/equacao-de-soma-e-subtracao-de-uma-etapa/e/one_step_equations" }
+      { texto: "Aula: A mesma coisa dos dois lados das equações (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/algebra-equacoes-7ano/raciocinio-para-equacoes-de-uma-etapa/v/why-we-do-the-same-thing-to-both-sides-simple-equations" },
+      { texto: "Aula: Introdução às equações de duas etapas (Khan Academy)", url: "https://pt.khanacademy.org/math/pre-algebra/xb4832e56:one-step-and-two-step-equations-inequalities/xb4832e56:two-step-equations-intro/v/why-we-do-the-same-thing-to-both-sides-two-step-equations" },
+      { texto: "Pratique: Equações de adição e subtração de uma etapa (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/algebra-equacoes-7ano/equacao-de-soma-e-subtracao-de-uma-etapa/e/one_step_equations" }
     ]
   },
   {
@@ -61,8 +62,8 @@ const habilidades = [
     explicacao: "Em grandezas proporcionais, se uma dobra, a outra também dobra. Se 2 kg custam R$ 12, 1 kg custa R$ 6, então 5 kg custam 5 × 6 = R$ 30.",
     links: [
       { texto: "Aula: Razões equivalentes (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-razoes-7ano/x6a2222f1cf6da07e:razoes-equivalentes/v/equivalent-ratios" },
-      { texto: "Aula: Razões equivalentes em uma receita (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-razoes-7ano/x6a2222f1cf6da07e:razoes-equivalentes/v/ratios-for-recipes" },
-      { texto: "Exercícios: Problemas de razões equivalentes (Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-razoes-7ano/x6a2222f1cf6da07e:razoes-equivalentes/e/ratio_word_problems" }
+      { texto: "Aula: Razões equivalentes: receita (Khan Academy, 7º ano)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-razoes-7ano/x6a2222f1cf6da07e:razoes-equivalentes/v/ratios-for-recipes" },
+      { texto: "Pratique: Problemas de razões equivalentes (exercícios da Khan Academy)", url: "https://pt.khanacademy.org/math/pt-7-ano/numeros-razoes-7ano/x6a2222f1cf6da07e:razoes-equivalentes/e/ratio_word_problems" }
     ]
   }
 ];
