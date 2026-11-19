@@ -557,6 +557,11 @@ mark {
   overflow: hidden;
 }
 
+/* Valor de cada barra do gráfico (porcentagem), sem CSS inline no HTML */
+.queda__item--5ano { --valor: 43.5; }
+.queda__item--9ano { --valor: 16.5; }
+.queda__item--em { --valor: 5.2; }
+
 .queda__barra {
   display: block;
   height: 100%;
