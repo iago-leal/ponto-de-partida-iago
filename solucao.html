@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faça o diagnóstico de matemática e descubra seu ponto de partida.">
+  <title>Ponto de Partida | Solução</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Ponto de Partida</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="solucao.html" aria-current="page">Solução</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div class="acess" role="group" aria-label="Opções de acessibilidade">
+        <button type="button" class="acess__btn" id="btn-fonte-menos" aria-label="Diminuir tamanho da fonte">A−</button>
+        <button type="button" class="acess__btn" id="btn-fonte-mais" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" class="acess__btn" id="btn-contraste" aria-pressed="false" aria-label="Alto contraste">Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="secao" aria-labelledby="titulo-solucao">
+      <div class="container container--estreito">
+        <h1 id="titulo-solucao">Diagnóstico de matemática</h1>
+        <p class="lead">No seu ritmo, sem cronômetro. Quando você erra, o diagnóstico volta um degrau até achar a base que está firme.</p>
+
+        <div class="painel">
+          <!-- TELA 1: conte sobre você -->
+          <div id="tela-inicio">
+            <p id="ultimo-resultado" class="aviso" hidden></p>
+            <h2>Antes de começar, conte sobre você</h2>
+            <p>Sua série define em qual degrau o diagnóstico começa. Nada do que você responder é enviado ou guardado com seu nome.</p>
+
+            <form id="form-perfil" novalidate>
+              <div class="campo">
+                <label for="apelido">Como quer ser chamado? (opcional)</label>
+                <input type="text" id="apelido" name="apelido" autocomplete="given-name" maxlength="40">
+              </div>
+
+              <div class="campo">
+                <label for="serie">Em que série você está? <span aria-hidden="true">*</span></label>
+                <select id="serie" name="serie" aria-describedby="erro-serie" required>
+                  <option value="">Selecione</option>
+                  <option value="6">6º ano</option>
+                  <option value="7">7º ano</option>
+                  <option value="8">8º ano</option>
+                  <option value="9">9º ano</option>
+                  <option value="em">Ensino médio</option>
+                </select>
+                <p class="erro-campo" id="erro-serie"></p>
+              </div>
+
+              <div class="campo campo--check" id="campo-voz">
+                <input type="checkbox" id="ler-voz" name="ler-voz">
+                <label for="ler-voz">Ler as perguntas e as alternativas em voz alta</label>
+              </div>
+
+              <details class="detalhes">
+                <summary>O que cai no diagnóstico</summary>
+                <ol id="lista-habilidades" class="habilidades"></ol>
+              </details>
+
+              <button type="submit" class="btn btn--primario">Começar</button>
+            </form>
+          </div>
+
+          <!-- TELA 2: pergunta -->
+          <div id="tela-questao" hidden>
+            <div class="progresso">
+              <p id="numero-questao" tabindex="-1">Pergunta 1</p>
+              <ol id="mapa-escada" class="mapa" aria-label="Em qual degrau você está"></ol>
+            </div>
+
+            <form id="form-questao" novalidate>
+              <fieldset>
+                <legend id="enunciado"></legend>
+                <p class="etiqueta" id="etiqueta-habilidade"></p>
+                <div id="opcoes" class="opcoes"></div>
+              </fieldset>
+
+              <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+
+              <div class="acoes">
+                <button type="submit" class="btn btn--primario" id="btn-responder">Responder</button>
+                <button type="button" class="btn btn--primario" id="btn-proxima" hidden>Próxima pergunta</button>
+                <button type="button" class="btn" id="btn-ouvir" hidden>Ouvir de novo</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- TELA 3: resultado -->
+          <div id="tela-resultado" hidden>
+            <h2 id="titulo-resultado" tabindex="-1"></h2>
+            <p id="texto-resultado"></p>
+            <p id="comparacao" class="aviso" hidden></p>
+
+            <h3>Como você foi em cada degrau</h3>
+            <ul id="resumo" class="resumo"></ul>
+
+            <section id="trilha" class="trilha" aria-labelledby="titulo-trilha">
+              <h3 id="titulo-trilha">O que estudar agora</h3>
+              <p id="explicacao" class="explicacao"></p>
+              <ul id="links-trilha" class="links-trilha"></ul>
+
+              <div id="bloco-caminho" hidden>
+                <h3>Seu caminho até a sua série</h3>
+                <ol id="caminho" class="caminho"></ol>
+              </div>
+            </section>
+
+            <div class="acoes">
+              <button type="button" class="btn btn--primario" id="btn-refazer">Refazer o diagnóstico</button>
+              <button type="button" class="btn" id="btn-trocar-serie">Trocar a série</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p class="rodape__marca">Ponto de Partida</p>
+      <p>Global Solution 2026/2 · FIAP · Engenharia de Software</p>
+      <p>Protótipo acadêmico. As aulas indicadas na trilha são conteúdos gratuitos da Khan Academy.</p>
+    </div>
+  </footer>
+
+  <script src="js/acessibilidade.js"></script>
+  <script src="js/diagnostico.js"></script>
+</body>
+</html>

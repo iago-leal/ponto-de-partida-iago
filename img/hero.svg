@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="420" height="340">
+  <rect x="0" y="0" width="420" height="340" rx="24" fill="#eef1fa"/>
+  <g font-family="Arial, sans-serif" font-weight="700" font-size="22" text-anchor="middle">
+    <rect x="30"  y="250" width="72" height="60"  rx="8" fill="#f5a524"/>
+    <text x="66"  y="288" fill="#1b2333">1</text>
+    <rect x="102" y="200" width="72" height="110" rx="8" fill="#8fa8ee"/>
+    <text x="138" y="238" fill="#1b2333">2</text>
+    <rect x="174" y="150" width="72" height="160" rx="8" fill="#5a7fe0"/>
+    <text x="210" y="188" fill="#ffffff">3</text>
+    <rect x="246" y="100" width="72" height="210" rx="8" fill="#3462d8"/>
+    <text x="282" y="138" fill="#ffffff">4</text>
+    <rect x="318" y="50"  width="72" height="260" rx="8" fill="#1f4fd1"/>
+    <text x="354" y="88"  fill="#ffffff">5</text>
+  </g>
+  <text x="66" y="200" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1b2333">comece</text>
+  <text x="66" y="218" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1b2333">aqui</text>
+  <path d="M66 226 V242 M59 235 L66 243 L73 235" fill="none" stroke="#1b2333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

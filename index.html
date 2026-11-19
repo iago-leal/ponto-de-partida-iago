@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ponto de Partida: diagnóstico gratuito que mostra por onde começar a estudar matemática.">
+  <title>Ponto de Partida | Início</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="32" height="32">
+        <span>Ponto de Partida</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="solucao.html">Solução</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div class="acess" role="group" aria-label="Opções de acessibilidade">
+        <button type="button" class="acess__btn" id="btn-fonte-menos" aria-label="Diminuir tamanho da fonte">A−</button>
+        <button type="button" class="acess__btn" id="btn-fonte-mais" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" class="acess__btn" id="btn-contraste" aria-pressed="false" aria-label="Alto contraste">Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero__inner">
+        <div>
+          <h1 id="titulo-hero">O Brasil não tem falta de conteúdo para estudar. Tem falta de saber <mark>por onde começar.</mark></h1>
+          <p class="lead">Você diz sua série e responde no seu ritmo, sem cronômetro. Quando erra, o diagnóstico volta um degrau até achar a base que faltou e monta o seu caminho de estudo. De graça e sem cadastro.</p>
+          <div class="acoes">
+            <a class="btn btn--primario" href="solucao.html">Fazer o diagnóstico</a>
+            <a class="link-seta" href="#como-funciona">Como funciona</a>
+          </div>
+        </div>
+
+        <!-- Uma questão de verdade do diagnóstico, no lugar de uma ilustração genérica -->
+        <figure class="amostra">
+          <div class="amostra__cartao" aria-hidden="true">
+            <p class="amostra__topo"><span>Pergunta 4 · 9º ano</span><span>Frações</span></p>
+            <div class="amostra__barra"><span></span></div>
+            <p class="amostra__pergunta">Quanto é 3/4 de 20?</p>
+            <ul class="amostra__opcoes">
+              <li class="is-errada">12</li>
+              <li class="is-certa">15</li>
+              <li>16</li>
+              <li>5</li>
+            </ul>
+            <p class="amostra__dica"><strong>Dica:</strong> divida 20 em 4 partes iguais (5 cada) e pegue 3 delas. 5 × 3 = 15.</p>
+          </div>
+          <figcaption>Exemplo de pergunta: quem marca 12 erra, vê a dica com o raciocínio e o diagnóstico volta um degrau, para divisão.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- O PROBLEMA EM DADOS -->
+    <section class="faixa" aria-labelledby="titulo-dado">
+      <div class="container">
+        <h2 id="titulo-dado">A defasagem em matemática se acumula a cada ano</h2>
+        <p class="lead">Quem não aprendeu a base leva a lacuna para a série seguinte. Ela vai somando até o aluno não entender mais nada da aula da própria série.</p>
+
+        <figure class="queda">
+          <figcaption class="queda__titulo">Estudantes com aprendizado adequado em matemática, Brasil, Saeb 2023</figcaption>
+          <ul class="queda__barras">
+            <li style="--valor: 43.5">
+              <span class="queda__rotulo">5º ano do fundamental</span>
+              <span class="queda__trilho"><span class="queda__barra"></span></span>
+              <span class="queda__valor">43,5%</span>
+            </li>
+            <li style="--valor: 16.5">
+              <span class="queda__rotulo">9º ano do fundamental</span>
+              <span class="queda__trilho"><span class="queda__barra"></span></span>
+              <span class="queda__valor">16,5%</span>
+            </li>
+            <li style="--valor: 5.2">
+              <span class="queda__rotulo">3º ano do ensino médio</span>
+              <span class="queda__trilho"><span class="queda__barra"></span></span>
+              <span class="queda__valor">5,2%</span>
+            </li>
+          </ul>
+        </figure>
+
+        <div class="fatos">
+          <p class="fato"><strong>52% e 32%</strong> são as parcelas de alunos do 5º ano com aprendizado adequado em matemática entre os mais ricos e entre os mais pobres. A diferença já existe antes do fundamental II.</p>
+          <p class="fato"><strong>73%</strong> dos estudantes brasileiros de 15 anos ficaram abaixo do nível básico de matemática no PISA 2022.</p>
+        </div>
+
+        <!-- TODO: conferir os números no relatório original do Todos Pela Educação antes da entrega -->
+        <p class="fonte">Fontes: Todos Pela Educação, a partir do Saeb 2023/Inep, divulgado em abril de 2025 (<a href="https://www.brasildefato.com.br/2025/04/28/aprendizagem-na-educacao-basica-ainda-nao-retomou-niveis-pre-pandemia/" target="_blank" rel="noopener">5º ano<span class="visualmente-oculto"> (abre em nova aba)</span></a>, <a href="https://www.jornalopcao.com.br/educacao/aprendizagem-na-educacao-basica-ainda-nao-retomou-niveis-pre-pandemia-701508/" target="_blank" rel="noopener">9º ano<span class="visualmente-oculto"> (abre em nova aba)</span></a>, <a href="https://mais.opovo.com.br/jornal/cidades/2025/04/29/54-dos-alunos-do-3-ano-do-ensino-medio-do-ceara-tem-aprendizado-abaixo-do-basico-em-matematica.html" target="_blank" rel="noopener">ensino médio<span class="visualmente-oculto"> (abre em nova aba)</span></a>, <a href="https://abcdoabc.com.br/estudo-revela-que-desigualdades-educacionais-aumentaram-no-brasil-apos-pandemia/" target="_blank" rel="noopener">desigualdade<span class="visualmente-oculto"> (abre em nova aba)</span></a>) e <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa" target="_blank" rel="noopener">Inep, PISA 2022<span class="visualmente-oculto"> (abre em nova aba)</span></a>.</p>
+      </div>
+    </section>
+
+    <!-- CIDADÃOS BENEFICIADOS -->
+    <section class="secao" aria-labelledby="titulo-quem">
+      <div class="container">
+        <h2 id="titulo-quem">Para quem é o Ponto de Partida</h2>
+        <p class="lead">Para o estudante do 6º ano ao ensino médio, principalmente de escola pública, que chegou à série atual com lacunas na base e não tem aula de reforço nem aula particular.</p>
+
+        <div class="linhas">
+          <article class="linha">
+            <h3>Quem precisa de mais tempo</h3>
+            <p>Estudantes com dificuldade de aprendizagem fazem o diagnóstico sem cronômetro, uma pergunta por vez, e veem a dica com o raciocínio a cada erro.</p>
+          </article>
+          <article class="linha">
+            <h3>Quem tem dificuldade para ler</h3>
+            <p>As perguntas e as alternativas podem ser lidas em voz alta pelo próprio navegador.</p>
+          </article>
+          <article class="linha">
+            <h3>Quem usa leitor de tela ou tem baixa visão</h3>
+            <p>Tudo funciona pelo teclado, com alto contraste e ajuste do tamanho da letra.</p>
+          </article>
+          <article class="linha">
+            <h3>Quem é surdo ou depende de texto</h3>
+            <p>Cada conteúdo tem uma explicação escrita. Nada depende de áudio ou de vídeo para ser entendido.</p>
+          </article>
+          <article class="linha">
+            <h3>Quem estuda longe dos grandes centros</h3>
+            <p>A página é leve, roda em celular simples e não pede cadastro nem login.</p>
+          </article>
+          <article class="linha">
+            <h3>E, de tabela, o professor</h3>
+            <p>Com turmas de mais de 30 alunos, ele não consegue descobrir sozinho onde cada um travou.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="secao secao--borda" id="como-funciona" aria-labelledby="titulo-como">
+      <div class="container">
+        <h2 id="titulo-como">Cada conteúdo depende do anterior</h2>
+        <p class="lead">O diagnóstico começa pelo degrau da sua série. Se você erra, ele volta um degrau, até encontrar a base que está firme. O seu ponto de partida é o degrau logo acima dela.</p>
+
+        <ol class="escada" aria-label="Os cinco conteúdos do diagnóstico, do mais básico ao mais avançado">
+          <li><span class="escada__serie">4º e 5º ano</span><strong>Divisão</strong></li>
+          <li class="escada__partida"><span class="escada__serie">6º ano</span><strong>Frações</strong><span class="escada__tag">Exemplo: errou frações e acertou divisão? Comece aqui.</span></li>
+          <li><span class="escada__serie">6º e 7º ano</span><strong>Porcentagem</strong></li>
+          <li><span class="escada__serie">7º ano</span><strong>Equação de 1º grau</strong></li>
+          <li><span class="escada__serie">7º ano</span><strong>Proporção e regra de três</strong></li>
+        </ol>
+
+        <ol class="passos">
+          <li><strong>Conte sobre você</strong>Diga sua série e, se quiser, como prefere ser chamado. Dá para ligar a leitura das perguntas em voz alta.</li>
+          <li><strong>Responda no seu ritmo</strong>Uma pergunta por vez, sem cronômetro. Errou? Você vê a dica e o diagnóstico volta um degrau.</li>
+          <li><strong>Receba o seu caminho</strong>Seu ponto de partida, uma explicação curta e aulas gratuitas da Khan Academy, degrau por degrau até a sua série.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ODS -->
+    <section class="secao secao--borda" aria-labelledby="titulo-ods">
+      <div class="container">
+        <h2 id="titulo-ods">Objetivos de Desenvolvimento Sustentável</h2>
+        <div class="ods-grade">
+          <article class="ods ods--4">
+            <p class="ods__numero" aria-hidden="true">4</p>
+            <h3>Educação de qualidade</h3>
+            <p><strong>Meta 4.1:</strong> que o aluno termine o ensino básico tendo aprendido de fato, e não só passado de ano.</p>
+          </article>
+          <article class="ods ods--10">
+            <p class="ods__numero" aria-hidden="true">10</p>
+            <h3>Redução das desigualdades</h3>
+            <p><strong>Meta 10.2:</strong> dar a qualquer aluno com celular um diagnóstico que hoje só tem quem paga aula particular.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA -->
+    <section class="faixa" aria-labelledby="titulo-chamada">
+      <div class="container chamada">
+        <h2 id="titulo-chamada">Descubra seu ponto de partida. Leva poucos minutos.</h2>
+        <p class="lead">Não precisa de cadastro. Suas respostas ficam só no seu navegador.</p>
+        <div class="acoes">
+          <a class="btn btn--primario" href="solucao.html">Fazer o diagnóstico</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p class="rodape__marca">Ponto de Partida</p>
+      <p>Global Solution 2026/2 · FIAP · Engenharia de Software</p>
+      <p>Protótipo acadêmico. As aulas indicadas na trilha são conteúdos gratuitos da Khan Academy.</p>
+    </div>
+  </footer>
+
+  <script src="js/acessibilidade.js"></script>
+</body>
+</html>
