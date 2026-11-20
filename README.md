@@ -121,7 +121,7 @@ ponto-de-partida/
 │   └── formulario.js      # Validação do formulário "Leve para sua escola"
 ├── img/
 │   ├── logo.svg
-│   └── avatar.svg         # ícone dos integrantes na página de equipe
+│   └── iago.jpg, plinio.jpg, joao.jpg, vinicius.jpg  # fotos da equipe
 └── README.md
 ```
 
