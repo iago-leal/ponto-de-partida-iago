@@ -4,8 +4,7 @@
 
 Projeto desenvolvido para a **Global Solution 2026/2 – CitizenTech** (FIAP · Engenharia de Software · Turma 1ESOR).
 
-🔗 **Site publicado:** [link do GitHub Pages](#) <!-- TODO: colar o link -->
-🎥 **Vídeo pitch:** [link do vídeo](#) <!-- TODO: colar o link (YouTube "não listado") -->
+🎥 **Vídeo pitch:** https://youtu.be/bU-Km4W8vIE
 
 ---
 
@@ -155,6 +154,11 @@ Utilizamos o **Claude (Anthropic)** como apoio em:
 - Organização da estrutura do projeto e deste README
 - Explicação de conceitos e apoio na escrita e revisão do código
 - Roteiro do vídeo pitch
+
+No vídeo pitch, também usamos:
+- **ElevenLabs:** narração gerada a partir da voz do integrante Iago, com o texto do roteiro escrito e aprovado pelo grupo
+- **vidIQ:** trilha sonora instrumental original
+- **Playwright:** gravação automatizada da navegação no site
 
 Todo o código e o texto foram **revisados, compreendidos e ajustados pelo grupo**.
 
